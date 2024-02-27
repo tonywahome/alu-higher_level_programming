@@ -1,2 +1,3 @@
 #!/usr/bin/python3
-import this
+with open('zen_of_py.txt', 'r') as file:
+    print(file.read().rstrip())
