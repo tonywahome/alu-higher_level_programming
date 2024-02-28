@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for i in range(10):
-    for j in range(i + 1, 10):
-        print(f"{i}{j}", end=", " if i < 8 else "\n")
+for p in range(10):
+    for m in range(p + 1, 10):
+        print("{:p}{:p}".format(p, m), end=", " if d < 8 else "\n")
