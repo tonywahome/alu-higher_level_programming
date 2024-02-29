@@ -2,12 +2,15 @@
 a = 10
 b = 5
 if __name__ == "__main__":
-    from calculator_1 import add, subtract, multiply, divide
-sum_result = (a, b)
-difference_result = subtract(a, b)
-product_result = multiply(a, b)
-division_result = divide(a, b)
+    from calculator_1 import add, sub, mul, div
 
-output = "{} + {} = {}\n{} - {} = {}\n{} * {} = {}\n{} / {} = {}".format(
-        a, b, sum_result, a, b, difference_result, a, b, product_result, a, b, division_result)
-print(output)
+    result_add = add(a, b)
+    result_sub = sub(a, b)
+    result_mul = mul(a, b)
+    result_div = div(a, b)
+
+    output = "{} + {} = {}\n{} - {} = {}\n{} * {} = {}\n{} / {} = {}".format(
+        a, b, result_add, a, b, result_sub, a, b, result_mul, a, b, result_div
+    )
+
+    print(output)
