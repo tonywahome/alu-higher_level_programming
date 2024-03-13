@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 """
-defining a class
+This module defines a class
 """
 
 class Square:
+    """
+    Square represents a class
+    """
     def __init__(self):
         pass
-    
-"""
-defined the class Square
-"""
