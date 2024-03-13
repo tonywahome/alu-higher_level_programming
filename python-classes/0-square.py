@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-This module defines a class
+This module defines the class Square
 """
 
 class Square:
     """
-    Square represents a class
+    This class represents a square
     """
     def __init__(self):
         pass
