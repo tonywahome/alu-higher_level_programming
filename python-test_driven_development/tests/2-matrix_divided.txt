@@ -64,3 +64,34 @@ Test matrix with different rows
     ...
     TypeError: Each row of the matrix must have the same size
 
+Test empty matrix more:
+    >>> matrix_divided([[], [], []], 10)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+Test 1st arg str:
+    >>> matrix_divided("foo", 1)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+Test 1st arg empty list:
+    >>> matrix_divided([], 1)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test division by non num:
+    >>> matrix_divided([[2]], "foo")
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+Test missing 1 arg:
+    >>> matrix_divided()
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
