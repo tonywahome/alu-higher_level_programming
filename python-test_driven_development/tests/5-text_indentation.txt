@@ -122,7 +122,7 @@ Test existing newlines:
     :
     <BLANKLINE>
 
-    Test none:
+Test none:
     >>> text_indentation(None)
     Traceback (most recent call last):
     ...
