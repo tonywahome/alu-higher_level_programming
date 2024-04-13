@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Return State object matching arg"""
 
