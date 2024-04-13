@@ -1,16 +1,24 @@
-#!/usr/bin/python3
-"""Lists all states"""
 
+#!/usr/bin/python3
+""" lists all the states from a given database"""
+import sys
 import MySQLdb
-from sys import argv
 
 if __name__ == "__main__":
-    conn = MySQLdb.connect(host="localhost", port=3306, charset="utf8",
-                           user=argv[1], passwd=argv[2], db=argv[3])
-    cur = conn.cursor()
-    cur.execute("SELECT * FROM states ORDER BY states.id ASC")
-    query_rows = cur.fetchall()
-    for row in query_rows:
-        print(row)
-    cur.close()
-    conn.close()
+    """ setting the file as a script"""
+    with MySQLdb.connect(
+        user=sys.argv[1],
+        passwd=sys.argv[2],
+        db=sys.argv[3],
+        host='localhost',
+        port=3306
+    )as s:
+        cur = s.cursor()
+        cur.execute(
+                "SELECT * FROM states ORDER BY id ASC"
+            )
+        all_states = cur.fetchall()
+        for each_state in all_states:
+            print(each_state)
+        cur.close()
+
