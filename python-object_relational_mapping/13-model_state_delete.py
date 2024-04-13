@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Deletes states whose name contains 'a'"""
 

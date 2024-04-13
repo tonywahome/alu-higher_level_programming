@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Lists all states starting with passed arg, prevents injection"""
 

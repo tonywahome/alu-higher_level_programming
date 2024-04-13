@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Lists all cities by state"""
 
