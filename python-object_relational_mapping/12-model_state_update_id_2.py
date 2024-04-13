@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """Adds a brand new State to the system!"""
 
