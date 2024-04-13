@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """ lists all the states from a given database"""
 import sys
@@ -21,4 +20,3 @@ if __name__ == "__main__":
         for each_state in all_states:
             print(each_state)
         cur.close()
-
