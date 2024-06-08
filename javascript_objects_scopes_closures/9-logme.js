@@ -1,11 +1,7 @@
 #!/usr/bin/node
+let callCount = 0;
 
-exports.esrever = function (list) {
-  const reversedList = [];
-
-  for (let i = list.length - 1; i >= 0; i--) {
-    const valueAtIndex = list[i];
-    reversedList.push(valueAtIndex);
-  }
-  return reversedList;
+exports.logMe = function (item) {
+  console.log(`${callCount}: ${item}`);
+  callCount += 1;
 };
