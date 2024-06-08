@@ -1,5 +1,5 @@
 #!/usr/bin/node 
-exporrts.nbOccurences = function (list, searchElement) {
+exports.nbOccurences = function (list, searchElement) {
   let num = 0;
   list.forEach(element => {
     if (element === searchElement) {
